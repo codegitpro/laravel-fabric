@@ -1,0 +1,61 @@
+﻿[
+  // ---------- Scss Master ---------- //
+
+  // Master - Desktop - Default
+
+  {
+    "outputFile": "Assets/Css/Css-Master-Desktop.css",
+    "inputFile": "Assets/Scss/Scss-Master/Scss-Master-Desktop.scss"
+  },
+
+  // Master - Desktop - Min
+
+  {
+    "outputFile": "Assets/Css/Css-Master-Desktop.min.css",
+    "inputFile": "Assets/Scss/Scss-Master/Scss-Master-Desktop.scss"
+  },
+
+  // Master - Mobile - Default
+
+  {
+    "outputFile": "Assets/Css/Css-Master-Mobile.css",
+    "inputFile": "Assets/Scss/Scss-Master/Scss-Master-Mobile.scss"
+  },
+
+  // Master - Mobile - Min
+
+  {
+    "outputFile": "Assets/Css/Css-Master-Mobile.min.css",
+    "inputFile": "Assets/Scss/Scss-Master/Scss-Master-Mobile.scss"
+  },
+
+  // ---------- Scss ---------- //
+
+  // Desktop - Default
+
+  {
+    "outputFile": "Assets/Css/Css-Desktop.css",
+    "inputFile": "Assets/Scss/Scss-Type/Scss-Desktop.scss"
+  },
+
+  // Desktop - Min
+
+  {
+    "outputFile": "Assets/Css/Css-Desktop.min.css",
+    "inputFile": "Assets/Scss/Scss-Type/Scss-Desktop.scss"
+  },
+
+  // Mobile - Default
+
+  {
+    "outputFile": "Assets/Css/Css-Mobile.css",
+    "inputFile": "Assets/Scss/Scss-Type/Scss-Mobile.scss"
+  },
+
+  // Mobile - Min
+
+  {
+    "outputFile": "Assets/Css/Css-Mobile.min.css",
+    "inputFile": "Assets/Scss/Scss-Type/Scss-Mobile.scss"
+  }
+]

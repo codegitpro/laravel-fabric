@@ -1,0 +1,125 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Typography -------------------- //
+
+.desktop {
+    &.default {
+
+        // Modal
+
+        .modal {
+
+            // New Template Modal
+
+            &.new-template-modal {
+                .modal-header {
+                    h3 {
+                        @include font-primary-bold;
+                        @include h5;
+
+                        @include mb-0;
+                    }
+                }
+
+                .modal-body {
+                    .template-box {
+                        .caption {
+                            p {
+                                @include font-primary-light;
+                                @include small;
+
+                                @include mb-2;
+
+                                color       : $c-grey;
+                            }
+                        }
+                    }
+
+                    .preview-box {
+                        .caption {
+                            p {
+                                @include font-primary-light;
+                                @include small;
+
+                                @include mb-2;
+
+                                color       : $c-grey;
+                            }
+                        }
+                    }
+
+                    .design-box {
+                        .caption {
+                            p {
+                                @include font-primary-light;
+                                @include small;
+
+                                @include mb-2;
+
+                                color       : $c-grey;
+                            }
+                        }
+                    }
+
+                    .proof-box {
+                        .caption {
+                            p {
+                                @include font-primary-light;
+                                @include small;
+
+                                @include mb-2;
+
+                                color       : $c-grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // New Font Modal
+
+            &.new-font-modal {
+                .modal-header {
+                    h3 {
+                        @include font-primary-bold;
+                        @include h5;
+
+                        @include mb-0;
+                    }
+                }
+
+                .modal-body {
+                    .font-box {
+                        .caption {
+                            p {
+                                @include font-primary-light;
+                                @include small;
+
+                                @include mb-2;
+
+                                color       : $c-grey;
+                            }
+                        }
+                    }
+
+                    .font-edit-name-box {
+                        .caption {
+                            p {
+                                @include font-primary-light;
+                                @include small;
+
+                                @include mb-2;
+
+                                color       : $c-grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

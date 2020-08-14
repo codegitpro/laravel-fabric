@@ -1,0 +1,104 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Tabs -------------------- //
+
+.desktop {
+    &.default {
+
+        // Tabs
+
+        .tabs {
+
+            // Primary
+
+            &.primary {
+                @include position-relative;
+
+                @include height-100;
+
+                .nav-pills {
+                    .nav-item {
+                        @include text-align-center;
+
+                        width           : 50%;
+                    }
+
+                    .nav-link {
+                        @include py-3;
+
+                        @include font-primary-bold;
+                        @include p;
+
+                        @include text-transform-uppercase;
+
+                        letter-spacing          : 2px;
+
+                        color                   : $c-primary-normal;
+
+                        background-color        : $c-grey-light;
+                        border-radius           : 0;
+
+                        transition              : 0.5s ease;
+
+                        &.active {
+                            background-color    : $c-white;
+
+                            transition          : 0.5s ease;
+                        }
+                    }
+                }
+
+                .tab-pane {
+                    @include p-0;
+                }
+
+                .tab-footer {
+                    @include position-absolute;
+
+                    @include width-100;
+
+                    bottom      : 0;
+                    right       : 0;
+                }
+
+                @include media-breakpoint-down(md) {
+                    .nav-pills {
+                        .nav-link {
+                            @include small;
+                        }
+                    }
+                }
+
+                @include media-breakpoint-down(sm) {
+                    .nav-pills {
+                        .nav-link {
+                            letter-spacing          : 1px;
+
+                            color                   : $c-primary;
+
+                            background-color        : $c-grey-light;
+                            border-top              : 1px solid $c-grey;
+                            border-bottom           : 1px solid $c-grey;
+
+                            &.active {
+                                color               : $c-white;
+
+                                background-color    : $c-primary-normal;
+                                border-top          : 1px solid $c-primary-normal;
+                                border-bottom       : 1px solid $c-primary-normal;
+                            }
+                        }
+                    }
+
+                    .tab-footer {
+                        @include position-fixed;
+                    }
+                }
+            }
+        }
+    }
+}

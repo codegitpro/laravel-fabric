@@ -1,0 +1,1278 @@
+﻿@charset "UTF-8";
+html {
+  scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden;
+  padding-right: 0rem !important;
+  background-color: #ffffff;
+  transition: 0.5s ease; }
+  body .page {
+    position: relative;
+    width: 85%;
+    left: 15%; }
+
+img {
+  width: 100%; }
+
+a {
+  transition: all 0.5s ease; }
+  a:hover a:focus, a:active {
+    transition: all 0.5s ease; }
+
+.container {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
+
+.container-fluid {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
+
+p {
+  margin-bottom: 0rem !important; }
+
+/*fontello.css*/
+@font-face {
+  font-family: 'fontello';
+  src: "{{asset('backend/Scss/fonts/fontello.eot?4737443')}}";
+  src: "{{asset('backend/Scss/fonts/fontello.eot?4737443#iefix')}}" format("embedded-opentype"), "{{asset('backend/Scss/fonts/fontello.woff2?4737443')}}" format("woff2"), "{{asset('backend/Scss/fonts/fontello.woff?4737443')}}" format("woff"), "{{asset('backend/Scss/fonts/fontello.ttf?4737443')}}" format("truetype"), "{{asset('backend/Scss/fonts/fontello.svg?4737443#fontello')}}" format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: "{{asset('backend/Scss/font/fontello.svg?4737443#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-bbm:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-line:before {
+  content: '\e80e'; }
+
+/* '' */
+.icon-woffi:before {
+  content: '\e812'; }
+
+/* '' */
+/*end fontello.css*/
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 300;
+  src: "{{asset('backend/Assets/Fonts/Mont/Mont-Light.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 400;
+  src: "{{asset('backend/Assets/Fonts/Mont/Mont-Regular.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  src: "{{asset('backend/Assets/Fonts/Mont/Mont-SemiBold.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 700;
+  src: "{{asset('backend/Assets/Fonts/Mont/Mont-Bold.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 800;
+  src: "{{asset('backend/Assets/Fonts/Biennale/Biennale-Black.otf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 900;
+  src: "{{asset('backend/Assets/Fonts/Biennale/Biennale-Heavy.otf')}}";
+  font-display: swap; }
+
+.desktop.default .sidebar {
+  position: fixed;
+  height: 100% !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  z-index: 1000;
+  width: 15%;
+  left: 0%;
+  background: #F4F4F9; }
+  .desktop.default .sidebar .sidebar-content {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin-top: 2.5rem !important; }
+    .desktop.default .sidebar .sidebar-content .col-inner {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .sidebar .sidebar-content .col-inner .content-link {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important; }
+        .desktop.default .sidebar .sidebar-content .col-inner .content-link .nav {
+          display: block; }
+  .desktop.default .sidebar .sidebar-footer {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .desktop.default .sidebar .sidebar-footer .col-inner {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .sidebar .sidebar-footer .col-inner .footer-button {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+        .desktop.default .sidebar .sidebar-footer .col-inner .footer-button .button {
+          position: relative;
+          width: 100%;
+          min-height: 1%;
+          padding: 0rem 1rem 0rem 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-left: 0rem !important;
+          padding-right: 0rem !important; }
+
+.desktop.default .modal.new-template-modal .modal-header h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0rem !important; }
+
+.desktop.default .modal.new-template-modal .modal-body .template-box .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 0.50rem !important;
+  color: #B0B6BB; }
+
+.desktop.default .modal.new-template-modal .modal-body .preview-box .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 0.50rem !important;
+  color: #B0B6BB; }
+
+.desktop.default .modal.new-template-modal .modal-body .design-box .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 0.50rem !important;
+  color: #B0B6BB; }
+
+.desktop.default .modal.new-template-modal .modal-body .proof-box .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 0.50rem !important;
+  color: #B0B6BB; }
+
+.desktop.default .modal.new-font-modal .modal-header h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0rem !important; }
+
+.desktop.default .modal.new-font-modal .modal-body .font-box .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 0.50rem !important;
+  color: #B0B6BB; }
+
+.desktop.default .modal.new-font-modal .modal-body .font-edit-name-box .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 0.50rem !important;
+  color: #B0B6BB; }
+
+.desktop.default .sidebar .sidebar-content .nav-link {
+  display: block;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #B0B6BB;
+  background-color: transparent; }
+  .desktop.default .sidebar .sidebar-content .nav-link i {
+    padding-right: 1rem !important; }
+  .desktop.default .sidebar .sidebar-content .nav-link:hover, .desktop.default .sidebar .sidebar-content .nav-link:focus, .desktop.default .sidebar .sidebar-content .nav-link:active {
+    padding-left: 3rem !important;
+    background-color: #ededed; }
+
+.desktop.default .btn-add {
+  display: block;
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0.85rem;
+  color: #ffffff;
+  background-color: #2ED692;
+  border-radius: 0.5em; }
+  .desktop.default .btn-add i {
+    padding-right: 1rem !important;
+    font-size: 12px;
+    line-height: 24px; }
+  .desktop.default .btn-add:hover, .desktop.default .btn-add:focus, .desktop.default .btn-add:active {
+    background-color: #22af76; }
+
+.desktop.default .modal.new-template-modal .modal-header .close {
+  padding: 1rem !important;
+  margin-right: 0rem !important;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: pointer;
+  opacity: 1;
+  color: #ffffff;
+  background-color: #EF4B3E;
+  border-radius: 0.5em; }
+
+.desktop.default .modal.new-template-modal .modal-footer .footer-button .btn-add-modal {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0.85rem;
+  color: #ffffff;
+  background-color: #2ED692;
+  border-radius: 0.5em; }
+  .desktop.default .modal.new-template-modal .modal-footer .footer-button .btn-add-modal i {
+    padding-right: 1rem !important;
+    font-size: 12px;
+    line-height: 24px; }
+  .desktop.default .modal.new-template-modal .modal-footer .footer-button .btn-add-modal:hover, .desktop.default .modal.new-template-modal .modal-footer .footer-button .btn-add-modal:focus, .desktop.default .modal.new-template-modal .modal-footer .footer-button .btn-add-modal:active {
+    background-color: #22af76; }
+
+.desktop.default .modal.new-font-modal .modal-header .close {
+  padding: 1rem !important;
+  margin-right: 0rem !important;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: pointer;
+  opacity: 1;
+  color: #ffffff;
+  background-color: #EF4B3E;
+  border-radius: 0.5em; }
+
+.desktop.default .modal.new-font-modal .modal-footer .footer-button .btn-add-modal {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0.85rem;
+  color: #ffffff;
+  background-color: #2ED692;
+  border-radius: 0.5em; }
+  .desktop.default .modal.new-font-modal .modal-footer .footer-button .btn-add-modal i {
+    padding-right: 1rem !important;
+    font-size: 12px;
+    line-height: 24px; }
+  .desktop.default .modal.new-font-modal .modal-footer .footer-button .btn-add-modal:hover, .desktop.default .modal.new-font-modal .modal-footer .footer-button .btn-add-modal:focus, .desktop.default .modal.new-font-modal .modal-footer .footer-button .btn-add-modal:active {
+    background-color: #22af76; }
+
+.desktop.default .sidebar .sidebar-footer .btn-logout {
+  display: block;
+  padding: 1rem !important;
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #EF4B3E;
+  border-radius: 0; }
+  .desktop.default .sidebar .sidebar-footer .btn-logout i {
+    padding-right: 1rem !important; }
+  .desktop.default .sidebar .sidebar-footer .btn-logout:hover, .desktop.default .sidebar .sidebar-footer .btn-logout:focus, .desktop.default .sidebar .sidebar-footer .btn-logout:active {
+    background-color: #e72313; }
+
+.desktop.default .custom-card.primary {
+  position: relative;
+  padding: 1.5rem !important;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 3px transparent, 0 1px 2px transparent;
+  transition: 0.5s ease; }
+  .desktop.default .custom-card.primary .col {
+    padding-left: 0.50rem !important;
+    padding-right: 0.50rem !important; }
+    .desktop.default .custom-card.primary .col:first-child {
+      max-width: 8.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(2) {
+      align-self: center;
+      max-width: 7.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(3) {
+      align-self: center;
+      max-width: 7.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(4) {
+      max-width: 8.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(5) {
+      max-width: 8.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(7) {
+      max-width: 8.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(8) {
+      max-width: 12.5%; }
+    .desktop.default .custom-card.primary .col:nth-child(9) {
+      max-width: 12.5%; }
+    .desktop.default .custom-card.primary .col:last-child {
+      max-width: 5%; }
+    .desktop.default .custom-card.primary .col .image {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.primary .col .image img {
+        overflow: hidden;
+        max-width: 70px;
+        border-radius: 0.5em; }
+    .desktop.default .custom-card.primary .col .caption {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.primary .col .caption p {
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 0.50rem !important;
+        color: #B0B6BB; }
+    .desktop.default .custom-card.primary .col .box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 0.50rem !important; }
+      .desktop.default .custom-card.primary .col .box:last-child {
+        margin-bottom: 0rem !important; }
+    .desktop.default .custom-card.primary .col .icon {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding-right: 0.50rem !important;
+      margin-bottom: 0.25rem !important; }
+      .desktop.default .custom-card.primary .col .icon a {
+        display: block;
+        padding: 0.35rem;
+        border-radius: 0.5em; }
+        .desktop.default .custom-card.primary .col .icon a i {
+          font-size: 12px;
+          line-height: 24px; }
+        .desktop.default .custom-card.primary .col .icon a.icon-copy {
+          color: #B0B6BB; }
+        .desktop.default .custom-card.primary .col .icon a.icon-delete {
+          color: #B0B6BB;
+          background-color: #F4F4F9; }
+          .desktop.default .custom-card.primary .col .icon a.icon-delete:hover, .desktop.default .custom-card.primary .col .icon a.icon-delete:focus, .desktop.default .custom-card.primary .col .icon a.icon-delete:active {
+            color: #ffffff;
+            background-color: #B0B6BB; }
+  .desktop.default .custom-card.primary:hover, .desktop.default .custom-card.primary:focus, .desktop.default .custom-card.primary:active {
+    z-index: 10;
+    transform: scale(1.015);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease; }
+
+.desktop.default .custom-card.secondary {
+  position: relative;
+  padding: 1.5rem !important;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 3px transparent, 0 1px 2px transparent;
+  transition: 0.5s ease; }
+  .desktop.default .custom-card.secondary > .row {
+    align-items: center; }
+  .desktop.default .custom-card.secondary .col {
+    padding-left: 0.50rem !important;
+    padding-right: 0.50rem !important; }
+    .desktop.default .custom-card.secondary .col:nth-child(1) {
+      text-align: center;
+      max-width: 5%; }
+    .desktop.default .custom-card.secondary .col:nth-child(2) {
+      max-width: 25%; }
+    .desktop.default .custom-card.secondary .col:nth-child(3) {
+      max-width: 65%; }
+    .desktop.default .custom-card.secondary .col:nth-child(4) {
+      max-width: 5%; }
+    .desktop.default .custom-card.secondary .col .caption {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.secondary .col .caption p {
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 0.50rem !important;
+        color: #B0B6BB; }
+    .desktop.default .custom-card.secondary .col .icon {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding-right: 0.50rem !important;
+      margin-bottom: 0.25rem !important; }
+      .desktop.default .custom-card.secondary .col .icon a {
+        display: block;
+        padding: 0.35rem;
+        border-radius: 0.5em; }
+        .desktop.default .custom-card.secondary .col .icon a i {
+          font-size: 12px;
+          line-height: 24px; }
+        .desktop.default .custom-card.secondary .col .icon a.icon-delete {
+          color: #B0B6BB;
+          background-color: #F4F4F9; }
+          .desktop.default .custom-card.secondary .col .icon a.icon-delete:hover, .desktop.default .custom-card.secondary .col .icon a.icon-delete:focus, .desktop.default .custom-card.secondary .col .icon a.icon-delete:active {
+            color: #ffffff;
+            background-color: #B0B6BB; }
+  .desktop.default .custom-card.secondary:hover, .desktop.default .custom-card.secondary:focus, .desktop.default .custom-card.secondary:active {
+    z-index: 10;
+    transform: scale(1.015);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease; }
+
+.desktop.default .custom-card.tertiary {
+  position: relative;
+  padding: 1.5rem !important;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 3px transparent, 0 1px 2px transparent;
+  transition: 0.5s ease; }
+  .desktop.default .custom-card.tertiary > .row {
+    align-items: center; }
+  .desktop.default .custom-card.tertiary .col {
+    padding-left: 0.50rem !important;
+    padding-right: 0.50rem !important; }
+    .desktop.default .custom-card.tertiary .col:nth-child(1) {
+      margin-left: auto !important;
+      max-width: 12.5%; }
+    .desktop.default .custom-card.tertiary .col:nth-child(2) {
+      max-width: 80%; }
+    .desktop.default .custom-card.tertiary .col:nth-child(3) {
+      max-width: 5%; }
+    .desktop.default .custom-card.tertiary .col .image {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.tertiary .col .image img {
+        overflow: hidden;
+        max-width: 70px;
+        border-radius: 0.5em; }
+    .desktop.default .custom-card.tertiary .col .caption {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.tertiary .col .caption p {
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 0.50rem !important;
+        color: #B0B6BB; }
+    .desktop.default .custom-card.tertiary .col .icon {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding-right: 0.50rem !important;
+      margin-bottom: 0.25rem !important; }
+      .desktop.default .custom-card.tertiary .col .icon a {
+        display: block;
+        padding: 0.35rem;
+        border-radius: 0.5em; }
+        .desktop.default .custom-card.tertiary .col .icon a i {
+          font-size: 12px;
+          line-height: 24px; }
+        .desktop.default .custom-card.tertiary .col .icon a.icon-copy {
+          color: #B0B6BB; }
+        .desktop.default .custom-card.tertiary .col .icon a.icon-delete {
+          color: #B0B6BB;
+          background-color: #F4F4F9; }
+          .desktop.default .custom-card.tertiary .col .icon a.icon-delete:hover, .desktop.default .custom-card.tertiary .col .icon a.icon-delete:focus, .desktop.default .custom-card.tertiary .col .icon a.icon-delete:active {
+            color: #ffffff;
+            background-color: #B0B6BB; }
+  .desktop.default .custom-card.tertiary:hover, .desktop.default .custom-card.tertiary:focus, .desktop.default .custom-card.tertiary:active {
+    z-index: 10;
+    transform: scale(1.015);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease; }
+
+.desktop.default .custom-card.quarter {
+  position: relative;
+  padding: 1.5rem !important;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 3px transparent, 0 1px 2px transparent;
+  transition: 0.5s ease; }
+  .desktop.default .custom-card.quarter > .row {
+    align-items: center; }
+  .desktop.default .custom-card.quarter .col {
+    padding-left: 0.50rem !important;
+    padding-right: 0.50rem !important; }
+    .desktop.default .custom-card.quarter .col:nth-child(1) {
+      margin-left: auto !important;
+      max-width: 12.5%; }
+    .desktop.default .custom-card.quarter .col:nth-child(2) {
+      max-width: 20%; }
+    .desktop.default .custom-card.quarter .col:nth-child(3) {
+      max-width: 40%; }
+    .desktop.default .custom-card.quarter .col:nth-child(4) {
+      text-align: right;
+      max-width: 25%; }
+    .desktop.default .custom-card.quarter .col .image {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.quarter .col .image img {
+        overflow: hidden;
+        max-width: 70px;
+        border-radius: 0.5em; }
+    .desktop.default .custom-card.quarter .col .caption {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.quarter .col .caption p {
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 0.50rem !important;
+        color: #B0B6BB; }
+    .desktop.default .custom-card.quarter .col .button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.quarter .col .button .btn-upload {
+        display: inline-block;
+        width: auto !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0.85rem;
+        color: #ffffff;
+        background-color: #2ED692;
+        border-radius: 0.5em; }
+        .desktop.default .custom-card.quarter .col .button .btn-upload i {
+          padding-right: 1rem !important;
+          font-size: 12px;
+          line-height: 24px; }
+        .desktop.default .custom-card.quarter .col .button .btn-upload:hover, .desktop.default .custom-card.quarter .col .button .btn-upload:focus, .desktop.default .custom-card.quarter .col .button .btn-upload:active {
+          background-color: #22af76; }
+  .desktop.default .custom-card.quarter:hover, .desktop.default .custom-card.quarter:focus, .desktop.default .custom-card.quarter:active {
+    z-index: 10;
+    transform: scale(1.015);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease; }
+
+.desktop.default .custom-card.quinary {
+  position: relative;
+  padding: 1.5rem !important;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 3px transparent, 0 1px 2px transparent;
+  transition: 0.5s ease; }
+  .desktop.default .custom-card.quinary > .row {
+    align-items: center; }
+  .desktop.default .custom-card.quinary .col {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .custom-card.quinary .col:nth-child(1) {
+      max-width: 10%; }
+    .desktop.default .custom-card.quinary .col:nth-child(2) {
+      max-width: 20%; }
+    .desktop.default .custom-card.quinary .col:nth-child(3) {
+      max-width: 20%; }
+    .desktop.default .custom-card.quinary .col:nth-child(4) {
+      max-width: 30%; }
+    .desktop.default .custom-card.quinary .col:nth-child(5) {
+      text-align: right;
+      max-width: 20%; }
+    .desktop.default .custom-card.quinary .col .image {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.quinary .col .image img {
+        overflow: hidden;
+        max-width: 70px;
+        border-radius: 0.5em; }
+    .desktop.default .custom-card.quinary .col .caption {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.quinary .col .caption p {
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 0.50rem !important;
+        color: #B0B6BB; }
+    .desktop.default .custom-card.quinary .col .button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .custom-card.quinary .col .button .btn-download {
+        display: inline-block;
+        width: auto !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0.85rem;
+        color: #ffffff;
+        background-color: #2ED692;
+        border-radius: 0.5em; }
+        .desktop.default .custom-card.quinary .col .button .btn-download i {
+          padding-right: 1rem !important;
+          font-size: 12px;
+          line-height: 24px; }
+        .desktop.default .custom-card.quinary .col .button .btn-download:hover, .desktop.default .custom-card.quinary .col .button .btn-download:focus, .desktop.default .custom-card.quinary .col .button .btn-download:active {
+          background-color: #22af76; }
+  .desktop.default .custom-card.quinary:hover, .desktop.default .custom-card.quinary:focus, .desktop.default .custom-card.quinary:active {
+    z-index: 10;
+    transform: scale(1.015);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease; }
+
+.desktop.default .select-box.primary .custom-select-box-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100% !important;
+  user-select: none; }
+  .desktop.default .select-box.primary .custom-select-box-wrapper select {
+    display: none; }
+  .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box {
+    position: relative;
+    display: inline-block;
+    width: 100% !important; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box.opened .custom-select-box-trigger:after {
+      transform: rotate(180deg);
+      transition: 0.5s ease; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box.opened .custom-options {
+      transform: translateY(0.5rem);
+      pointer-events: all;
+      visibility: visible;
+      opacity: 1; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-select-box-trigger {
+      position: relative;
+      display: block;
+      width: 100% !important;
+      padding: 0.50rem !important;
+      font-family: "Mont";
+      font-style: normal;
+      letter-spacing: 0.025em;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 24px;
+      line-height: 1.35;
+      color: #B0B6BB;
+      background-color: #ffffff;
+      border: 1px solid #B0B6BB;
+      border-radius: 0.5em;
+      cursor: pointer; }
+      .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-select-box-trigger:after {
+        display: inline-block;
+        font-family: "Font Awesome 5 Free",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-weight: 900;
+        content: '\f078';
+        float: right;
+        transform: rotate(0deg);
+        transition: 0.5s ease; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options {
+      position: absolute;
+      overflow-y: scroll;
+      display: block;
+      width: 100% !important;
+      z-index: 10;
+      top: 100%;
+      left: 0;
+      transform: translateY(1rem);
+      max-height: 10rem;
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+      border: 1px solid #B0B6BB;
+      border-radius: 0;
+      background-color: #ffffff;
+      transition: 0.5s ease; }
+      .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text {
+        position: relative;
+        display: block;
+        padding-top: 0.50rem !important;
+        padding-bottom: 0.50rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 24px;
+        cursor: pointer;
+        color: #B0B6BB;
+        border-bottom: 1px solid #B0B6BB;
+        transition: 0.5s ease; }
+        .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text:last-child {
+          border: none; }
+        .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text:hover {
+          background-color: #ededed;
+          transition: 0.5s ease; }
+        .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text.selected {
+          background-color: #ededed; }
+
+.desktop.default .input-box.primary input {
+  width: 100% !important;
+  padding: 1rem !important;
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  line-height: 1.35;
+  background-color: #ffffff;
+  border: 1px solid #B0B6BB;
+  border-radius: 0.5em;
+  outline-width: 0; }
+
+.desktop.default .submit-box.primary input {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0; }
+
+.desktop.default .submit-box.primary label {
+  display: flex;
+  overflow: hidden; }
+  .desktop.default .submit-box.primary label span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    display: block;
+    padding: 1rem !important;
+    margin-right: auto !important;
+    font-family: "Mont";
+    font-style: normal;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    width: 65%;
+    line-height: 1.35;
+    background-color: #ffffff;
+    border: 1px solid #B0B6BB;
+    border-radius: 0.5em; }
+  .desktop.default .submit-box.primary label strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    padding: 1rem !important;
+    font-family: "Mont";
+    font-style: normal;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    width: 33.5%;
+    line-height: 1.35;
+    color: #ffffff;
+    background-color: #B0B6BB;
+    border-radius: 0.5em;
+    transition: 0.5s ease; }
+    .desktop.default .submit-box.primary label strong i {
+      padding-right: 0.50rem !important; }
+    .desktop.default .submit-box.primary label strong:hover, .desktop.default .submit-box.primary label strong:focus, .desktop.default .submit-box.primary label strong:active {
+      background-color: #2ED692;
+      transition: 0.5s ease; }
+
+.desktop.default .pagination {
+  margin-bottom: 0rem !important; }
+  .desktop.default .pagination .page-item {
+    width: 100% !important;
+    text-align: center; }
+    .desktop.default .pagination .page-item .page-link {
+      display: block;
+      font-family: "Mont";
+      font-style: normal;
+      letter-spacing: 0.025em;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      padding: 0.85rem;
+      color: #B0B6BB;
+      background-color: #ffffff;
+      border: 1px solid #B0B6BB;
+      border-radius: 0; }
+      .desktop.default .pagination .page-item .page-link:hover, .desktop.default .pagination .page-item .page-link:focus, .desktop.default .pagination .page-item .page-link:active {
+        background-color: #F4F4F9; }
+
+.desktop.default .modal.new-template-modal .modal-header {
+  align-items: center;
+  padding: 1.5rem !important; }
+
+.desktop.default .modal.new-template-modal .modal-body {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important; }
+  .desktop.default .modal.new-template-modal .modal-body .body-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .modal.new-template-modal .modal-body .body-inner .template-box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem !important; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .template-box .caption {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .template-box .box {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .modal.new-template-modal .modal-body .body-inner .preview-box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem !important; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .preview-box .caption {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .preview-box .box {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .modal.new-template-modal .modal-body .body-inner .design-box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem !important; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .design-box .caption {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .design-box .box {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .modal.new-template-modal .modal-body .body-inner .proof-box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem !important; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .proof-box .caption {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      .desktop.default .modal.new-template-modal .modal-body .body-inner .proof-box .box {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .modal.new-template-modal .modal-footer {
+  margin: 0rem !important; }
+  .desktop.default .modal.new-template-modal .modal-footer .footer-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .modal.new-template-modal .modal-footer .footer-button .button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+
+.desktop.default .modal.new-font-modal .modal-header {
+  align-items: center;
+  padding: 1.5rem !important; }
+
+.desktop.default .modal.new-font-modal .modal-body {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important; }
+  .desktop.default .modal.new-font-modal .modal-body .body-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .modal.new-font-modal .modal-body .body-inner .font-box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem !important; }
+      .desktop.default .modal.new-font-modal .modal-body .body-inner .font-box .caption {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      .desktop.default .modal.new-font-modal .modal-body .body-inner .font-box .box {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .modal.new-font-modal .modal-body .body-inner .font-edit-name-box {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem !important; }
+      .desktop.default .modal.new-font-modal .modal-body .body-inner .font-edit-name-box .caption {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+      .desktop.default .modal.new-font-modal .modal-body .body-inner .font-edit-name-box .box {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .modal.new-font-modal .modal-footer {
+  margin: 0rem !important; }
+  .desktop.default .modal.new-font-modal .modal-footer .footer-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .modal.new-font-modal .modal-footer .footer-button .button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }

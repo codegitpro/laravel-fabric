@@ -1,0 +1,359 @@
+
+
+// Utitlities
+
+@import "../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Editor Page - Desktop - Layout -------------------- //
+
+.desktop {
+    &.default {
+
+        // Editor Page
+
+        .editor-page {
+            > .container-fluid {
+                @include py-0;
+
+                > .row {
+                    @include height-100;
+                }
+            }
+
+            // Content
+
+            .wrapper-content {
+                @include col-8;
+
+                background-color        : $c-grey-light;
+
+                > .row {
+                    @include height-100;
+
+                    @include align-items-center;
+                }
+
+                // Print
+
+                .print {
+                    @include col-5;
+
+                    @include mx-auto;
+
+                    .print-image {
+                        @include col-12;
+
+                        @include mb-4;
+
+                        .image {
+                            @include col-12;
+
+                            img {
+                                @include overflow-hidden;
+
+                                border-radius       : 2.5em;
+                            }
+                        }
+                    }
+
+                    .print-text {
+                        @include col-12;
+
+                        @include text-align-center;
+
+                        .caption {
+                            @include col-12;
+                        }
+                    }
+                }
+            }
+
+            // Sidebar
+
+            .wrapper-sidebar {
+                @include col-4;
+
+                @include px-0;
+
+                background-color        : $c-white;
+
+                box-shadow              : -15px 0px 35px 0px rgba(0,0,0,0.035);
+
+                // Design
+
+                .design {
+                    @include col-12;
+
+                    padding             : 2.5rem 3.5rem;
+
+                    .col-inner {
+                        &.font {
+                            @include col-12;
+
+                            @include mb-4;
+
+                            > .row {
+                                @include align-items-flex-end;
+                            }
+
+                            .font-box {
+                                @include col-12;
+
+                                max-width       : 77.5%;
+
+                                .caption {
+                                    @include col-12;
+                                }
+
+                                .box {
+                                    @include col-12;
+
+                                    @include pr-0;
+                                }
+                            }
+
+                            .button {
+                                @include col-12;
+
+                                max-width       : 22.5%;
+                            }
+                        }
+
+                        &.text {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .text-box {
+                                @include col-12;
+
+                                .caption {
+                                    @include col-12;
+                                }
+
+                                .box {
+                                    @include col-12;
+                                }
+                            }
+                        }
+
+                        &.action {
+                            @include col-12;
+
+                            @include mb-5;
+
+                            .action-icon {
+                                @include col-12;
+
+                                @include display-flex;
+
+                                .icon {
+                                    @include mx-3;
+
+                                    &:first-child {
+                                        @include ml-0;
+                                    }
+
+                                    &:last-child {
+                                        @include mr-0;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.appearance {
+                            @include col-12;
+
+                            .appearance-color {
+                                @include col-12;
+
+                                .caption {
+                                    @include col-12;
+                                }
+
+                                .color-variant {
+                                    @include col-12;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Upload Photo
+
+                .upload-photo {
+                    @include col-12;
+
+                    padding             : 2.5rem 3.5rem;
+
+                    .upload {
+                        @include col-12;
+
+                        .upload-button {
+                            @include col-10;
+
+                            @include mb-5;
+                            @include mx-auto;
+
+                            .button {
+                                @include col-12;
+                            }
+                        }
+
+                        .upload-image {
+                            @include col-12;
+
+                            .image {
+                                @include col-4;
+
+                                @include px-2;
+                                @include mb-3;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+
+                // Content
+
+                .wrapper-content {
+                    @include col-7;
+
+                    // Print
+
+                    .print {
+                        @include col-9;
+
+                        .print-image {
+                            @include mb-3;
+
+                            .image {
+                                img {
+                                    border-radius       : 1.5em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Sidebar
+
+                .wrapper-sidebar {
+                    @include col-5;
+
+                    // Design
+
+                    .design {
+                        @include px-5;
+
+                        .col-inner {
+                            &.font {
+                                .font-box {
+                                    max-width       : 70%;
+                                }
+
+                                .button {
+                                    max-width       : 30%;
+                                }
+                            }
+
+                            &.action {
+                                .action-icon {
+                                    .icon {
+                                        @include mx-2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Upload Photo
+
+                    .upload-photo {
+                        @include px-5;
+
+                        .upload {
+                            .upload-button {
+                                @include col-12;
+
+                                @include mx-0;
+                            }
+
+                            .upload-image {
+                                .image {
+                                    @include col-6;
+
+                                    @include px-1;
+                                    @include mb-2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top          : 4.5rem;
+
+                // Content
+
+                .wrapper-content {
+                    @include col-12;
+
+                    @include py-5;
+
+                    > .row {
+                        @include height-auto;
+                    }
+
+                    // Print
+
+                    .print {
+                        @include col-11;
+                    }
+                }
+
+                // Sidebar
+
+                .wrapper-sidebar {
+                    @include col-12;
+
+                    // Design
+
+                    .design {
+                        @include px-4;
+
+                        .col-inner {
+                            &.font {
+                                .font-box {
+                                    max-width       : 75%;
+                                }
+
+                                .button {
+                                    max-width       : 25%;
+                                }
+                            }
+                        }
+                    }
+
+                    // Upload Photo
+
+                    .upload-photo {
+                        @include px-4;
+
+                        .upload {
+                            .upload-button {
+                                @include col-10;
+
+                                @include mx-auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,628 @@
+﻿@charset "UTF-8";
+body {
+  background-color: #F7F7F7; }
+  body.mobile {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 400px; }
+
+img {
+  width: 100%; }
+
+a {
+  transition: all 0.5s ease; }
+  a:hover a:focus, a:active {
+    transition: all 0.5s ease; }
+
+.container {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
+
+.container-fluid {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
+
+p {
+  margin-bottom: 0rem !important; }
+
+/*fontello.css*/
+@font-face {
+  font-family: 'fontello';
+  src: url("../Scss/fonts/fontello.eot?4737443");
+  src: url("../Scss/fonts/fontello.eot?4737443#iefix") format("embedded-opentype"), url("../Scss/fonts/fontello.woff2?4737443") format("woff2"), url("../Scss/fonts/fontello.woff?4737443") format("woff"), url("../Scss/fonts/fontello.ttf?4737443") format("truetype"), url("../Scss/fonts/fontello.svg?4737443#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../Scss/font/fontello.svg?4737443#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-bbm:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-line:before {
+  content: '\e80e'; }
+
+/* '' */
+.icon-woffi:before {
+  content: '\e812'; }
+
+/* '' */
+/*end fontello.css*/
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 300;
+  src: "{{asset('frontend/Fonts/Mont/Mont-Light.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 400;
+  src: "{{asset('frontend/Fonts/Mont/Mont-Regular.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  src: "{{asset('frontend/Fonts/Mont/Mont-SemiBold.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 700;
+  src: "{{asset('frontend/Fonts/Mont/Mont-Bold.ttf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 800;
+  src: "{{asset('frontend/Fonts/Biennale/Biennale-Black.otf')}}";
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 900;
+  src: "{{asset('frontend/Fonts/Biennale/Biennale-Heavy.otf')}}";
+  font-display: swap; }
+
+.desktop.default .navbar {
+  position: fixed;
+  z-index: 1020;
+  top: 0;
+  left: 0; }
+  @media (max-width: 767.98px) {
+    .desktop.default .navbar {
+      width: 100% !important;
+      box-shadow: 0px 10px 15px 0px transparent;
+      transition: 0.5s ease; }
+      .desktop.default .navbar.scroll {
+        background-color: #ffffff;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.035);
+        transition: 0.5s ease; }
+      .desktop.default .navbar .navbar-brand {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 14.5rem; } }
+
+.desktop.default .font-heading {
+  color: #1B194E; }
+
+.desktop.default .font-caption {
+  margin-bottom: 1rem !important;
+  font-size: 12px;
+  line-height: 24px;
+  color: #B0B5B9; }
+  @media (max-width: 991.98px) {
+    .desktop.default .font-caption {
+      margin-bottom: 0.50rem !important; } }
+
+.desktop.default .font-heavy {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 900; }
+
+.desktop.default .font-black {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 800; }
+
+.desktop.default .font-bold {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700; }
+
+.desktop.default .font-semi-bold {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 600; }
+
+.desktop.default .font-medium {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 500; }
+
+.desktop.default .font-regular {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400; }
+
+.desktop.default .font-light {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300; }
+
+.desktop.default .btn.btn-add {
+  padding: 1rem !important;
+  color: #B0B5B9;
+  background-color: #ffffff;
+  border: 1px solid #B0B5B9;
+  border-radius: 0;
+  transition: 0.5s ease; }
+  .desktop.default .btn.btn-add:hover, .desktop.default .btn.btn-add:focus, .desktop.default .btn.btn-add:active {
+    color: #ffffff;
+    background-color: #B0B5B9;
+    transition: 0.5s ease; }
+
+.desktop.default .btn.btn-submit {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.2px;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  color: #ffffff;
+  background-color: #1B194E;
+  border-radius: 0; }
+  .desktop.default .btn.btn-submit:hover {
+    background-color: #282575; }
+  @media (max-width: 991.98px) {
+    .desktop.default .btn.btn-submit {
+      font-size: 12px;
+      line-height: 24px; } }
+  @media (max-width: 767.98px) {
+    .desktop.default .btn.btn-submit {
+      background-color: #595CD4; }
+      .desktop.default .btn.btn-submit:hover {
+        background-color: #8284de; } }
+
+.desktop.default .btn.btn-upload {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.2px;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  color: #ffffff;
+  background-color: #2ED692;
+  border-radius: 50em; }
+  .desktop.default .btn.btn-upload:hover {
+    background-color: #22af76; }
+  @media (max-width: 991.98px) {
+    .desktop.default .btn.btn-upload {
+      font-size: 12px;
+      line-height: 24px; } }
+
+.desktop.default .btn.btn-customize {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.2px;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  color: #B0B5B9;
+  background-color: #ffffff;
+  border: 1px solid #B0B5B9;
+  border-radius: 0; }
+  .desktop.default .btn.btn-customize:hover {
+    color: #1B194E;
+    border: 1px solid #1B194E; }
+  @media (max-width: 991.98px) {
+    .desktop.default .btn.btn-customize {
+      font-size: 12px;
+      line-height: 24px; } }
+
+.desktop.default .btn.btn-process {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.2px;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  color: #ffffff;
+  background-color: #1B194E;
+  border-radius: 0; }
+  .desktop.default .btn.btn-process:hover {
+    background-color: #282575; }
+  @media (max-width: 991.98px) {
+    .desktop.default .btn.btn-process {
+      font-size: 12px;
+      line-height: 24px; } }
+
+.desktop.default .icon {
+  display: inline-block; }
+  .desktop.default .icon:hover {
+    transform: translateY(-0.25rem); }
+
+.desktop.default .color {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50em; }
+  .desktop.default .color i {
+    position: absolute;
+    font-size: 12px;
+    line-height: 24px;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%) translateY(0.5rem);
+    opacity: 0;
+    color: #2ED692;
+    transition: 0.5s ease; }
+  .desktop.default .color:hover i, .desktop.default .color:focus i, .desktop.default .color:active i {
+    transform: translate(-50%, -50%) translateY(0rem);
+    opacity: 1;
+    transition: 0.5s ease; }
+  .desktop.default .color.black {
+    background-color: #000000;
+    border: 1px solid #000000; }
+  .desktop.default .color.red {
+    background-color: #DA3123;
+    border: 1px solid #DA3123; }
+  .desktop.default .color.blue-light {
+    background-color: #62C9CB;
+    border: 1px solid #62C9CB; }
+  .desktop.default .color.blue {
+    background-color: #3A78C3;
+    border: 1px solid #3A78C3; }
+  .desktop.default .color.pink {
+    background-color: #DB3E97;
+    border: 1px solid #DB3E97; }
+  .desktop.default .color.orange {
+    background-color: #ED9035;
+    border: 1px solid #ED9035; }
+  .desktop.default .color.white {
+    background-color: #ffffff;
+    border: 1px solid #000000; }
+  .desktop.default .color.purple {
+    background-color: #604C83;
+    border: 1px solid #604C83; }
+  .desktop.default .color.yellow {
+    background-color: #F6CE15;
+    border: 1px solid #F6CE15; }
+  .desktop.default .color.cream {
+    background-color: #F6F4CA;
+    border: 1px solid #F6F4CA; }
+  .desktop.default .color.green-pastel {
+    background-color: #B8DFC6;
+    border: 1px solid #B8DFC6; }
+  .desktop.default .color.blue-pastel {
+    background-color: #CFE1E2;
+    border: 1px solid #CFE1E2; }
+  .desktop.default .color.red-pastel {
+    background-color: #FFC5CF;
+    border: 1px solid #FFC5CF; }
+  .desktop.default .color.purple-pastel {
+    background-color: #C8B0D6;
+    border: 1px solid #C8B0D6; }
+  @media (max-width: 991.98px) {
+    .desktop.default .color {
+      width: 2.65rem;
+      height: 2.65rem; } }
+  @media (max-width: 767.98px) {
+    .desktop.default .color {
+      width: 2.35rem;
+      height: 2.35rem; } }
+
+.desktop.default .upload-picture {
+  position: relative;
+  display: flex;
+  height: 100% !important; }
+  .desktop.default .upload-picture img {
+    overflow: hidden;
+    border-radius: 1em;
+    border: 3.5px solid transparent;
+    transition: 0.5s ease; }
+  .desktop.default .upload-picture i {
+    position: absolute;
+    font-size: 12px;
+    line-height: 24px;
+    top: 17.5%;
+    left: 85%;
+    transform: translate(-50%, -50%) translateY(0.5rem);
+    opacity: 0;
+    color: #2ED692;
+    transition: 0.5s ease; }
+  .desktop.default .upload-picture:hover img {
+    border: 3.5px solid #2ED692;
+    transition: 0.5s ease; }
+  .desktop.default .upload-picture:hover i {
+    transform: translate(-50%, -50%) translateY(0rem);
+    opacity: 1;
+    transition: 0.5s ease; }
+
+.desktop.default .select-box.primary .custom-select-box-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100% !important;
+  user-select: none; }
+  .desktop.default .select-box.primary .custom-select-box-wrapper select {
+    display: none; }
+  .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box {
+    position: relative;
+    display: inline-block;
+    width: 100% !important; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box.opened .custom-select-box-trigger:after {
+      transform: rotate(180deg);
+      transition: 0.5s ease; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box.opened .custom-options {
+      transform: translateY(0.5rem);
+      pointer-events: all;
+      visibility: visible;
+      opacity: 1; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-select-box-trigger {
+      position: relative;
+      display: block;
+      width: 100% !important;
+      padding: 1rem !important;
+      font-family: "Mont";
+      font-style: normal;
+      letter-spacing: 0.025em;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 24px;
+      line-height: 1.35;
+      color: #B0B5B9;
+      background-color: #ffffff;
+      border: 1px solid #B0B5B9;
+      border-radius: 0;
+      cursor: pointer; }
+      .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-select-box-trigger:after {
+        display: inline-block;
+        font-family: "Font Awesome 5 Free",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-weight: 900;
+        content: '\f078';
+        float: right;
+        transform: rotate(0deg);
+        transition: 0.5s ease; }
+    .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options {
+      position: absolute;
+      overflow-y: scroll;
+      display: block;
+      width: 100% !important;
+      z-index: 10;
+      top: 100%;
+      left: 0;
+      transform: translateY(1rem);
+      max-height: 10rem;
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+      border: 1px solid #B0B5B9;
+      border-radius: 0;
+      background-color: #ffffff;
+      transition: 0.5s ease; }
+      .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text {
+        position: relative;
+        display: block;
+        padding-top: 0.50rem !important;
+        padding-bottom: 0.50rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 24px;
+        cursor: pointer;
+        color: #B0B5B9;
+        border-bottom: 1px solid #B0B5B9;
+        transition: 0.5s ease; }
+        .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text:last-child {
+          border: none; }
+        .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text:hover {
+          background-color: #F7F7F7;
+          transition: 0.5s ease; }
+        .desktop.default .select-box.primary .custom-select-box-wrapper .custom-select-box .custom-options .option-text.selected {
+          background-color: #F7F7F7; }
+
+.desktop.default .input-box.primary input {
+  width: 100% !important;
+  padding: 1rem !important;
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  line-height: 1.35;
+  border: 1px solid #B0B5B9;
+  outline-width: 0; }
+
+.desktop.default .tabs.primary {
+  position: relative;
+  height: 100% !important; }
+  .desktop.default .tabs.primary .nav-pills .nav-item {
+    text-align: center;
+    width: 50%; }
+  .desktop.default .tabs.primary .nav-pills .nav-link {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    font-family: "Mont";
+    font-style: normal;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25.2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1B194E;
+    background-color: #F7F7F7;
+    border-radius: 0;
+    transition: 0.5s ease; }
+    .desktop.default .tabs.primary .nav-pills .nav-link.active {
+      background-color: #ffffff;
+      transition: 0.5s ease; }
+  .desktop.default .tabs.primary .tab-pane {
+    padding: 0rem !important; }
+  .desktop.default .tabs.primary .tab-footer {
+    position: absolute;
+    width: 100% !important;
+    bottom: 0;
+    right: 0; }
+  @media (max-width: 991.98px) {
+    .desktop.default .tabs.primary .nav-pills .nav-link {
+      font-size: 12px;
+      line-height: 24px; } }
+  @media (max-width: 767.98px) {
+    .desktop.default .tabs.primary .nav-pills .nav-link {
+      letter-spacing: 1px;
+      color: #1B194E;
+      background-color: #F7F7F7;
+      border-top: 1px solid #B0B5B9;
+      border-bottom: 1px solid #B0B5B9; }
+      .desktop.default .tabs.primary .nav-pills .nav-link.active {
+        color: #ffffff;
+        background-color: #1B194E;
+        border-top: 1px solid #1B194E;
+        border-bottom: 1px solid #1B194E; }
+    .desktop.default .tabs.primary .tab-footer {
+      position: fixed; } }
+
+.desktop.default .modal.submit-modal .modal-header {
+  align-items: center;
+  padding: 1.5rem !important; }
+  .desktop.default .modal.submit-modal .modal-header h3 {
+    font-family: "Mont";
+    font-style: normal;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0rem !important; }
+  .desktop.default .modal.submit-modal .modal-header .close {
+    padding: 1rem !important;
+    margin-right: 0rem !important;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    opacity: 1;
+    color: #ffffff;
+    background-color: #EF4B3E;
+    border-radius: 0.5em; }
+
+.desktop.default .modal.submit-modal .modal-body {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important; }
+  .desktop.default .modal.submit-modal .modal-body .modal-text {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center; }
+    .desktop.default .modal.submit-modal .modal-body .modal-text .info {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .modal.submit-modal .modal-body .modal-text .info p {
+        font-family: "Mont";
+        font-style: normal;
+        letter-spacing: 0.025em;
+        font-weight: 300;
+        color: #B0B5B9; }
+
+.desktop.default .modal.submit-modal .modal-footer {
+  margin: 0rem !important; }
+  .desktop.default .modal.submit-modal .modal-footer .footer-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .modal.submit-modal .modal-footer .footer-button .button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; }
+
+@media (max-width: 991.98px) {
+  .desktop.default .modal.submit-modal .modal-body .modal-text .info p {
+    font-size: 12px;
+    line-height: 24px; }
+  .desktop.default .modal.submit-modal .modal-footer .footer-button .button {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important; } }

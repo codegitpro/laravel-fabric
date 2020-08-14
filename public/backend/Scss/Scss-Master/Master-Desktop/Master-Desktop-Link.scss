@@ -1,0 +1,45 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Link -------------------- //
+
+.desktop {
+    &.default {
+
+        // Sidebar
+
+        .sidebar {
+
+            // Sidebar Content
+
+            .sidebar-content {
+                .nav-link {
+                    @include display-block;
+
+                    @include py-3;
+                    @include px-5;
+
+                    @include font-primary-regular;
+                    @include small;
+
+                    color               : $c-grey;
+
+                    background-color    : transparent;
+
+                    i {
+                        @include pr-3;
+                    }
+
+                    &:hover, &:focus, &:active {
+                        padding-left        : 3rem !important;
+
+                        background-color    : $c-grey-light;
+                    }
+                }
+            }
+        }
+    }
+}

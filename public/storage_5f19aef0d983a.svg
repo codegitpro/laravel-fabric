@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="168" height="341" viewBox="0 0 168 341" xml:space="preserve">
+<desc>Created with Fabric.js 4.0.0-beta.8</desc>
+<defs>
+	<style type="text/css"><![CDATA[
+		@font-face {
+			font-family: 'mont-bold';
+			src: url('backend/Fonts/Mont/Mont-Bold.ttf');
+		}
+		@font-face {
+			font-family: 'mont-blackitalic';
+			src: url('backend/Fonts/Mont/Mont-BlackItalic.ttf');
+		}
+]]></style>
+</defs>
+<g transform="matrix(1 0 0 1 94 207)"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="http://orderly.fun/public/storage/backend/template/backgroundImage/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.jpg" x="-88" y="-60" width="176" height="120"></image>
+</g>
+<g transform="matrix(0.5 0 0 0.5 47.27 63.55)" style=""  >
+		<text xml:space="preserve" font-family="mont-bold" font-size="40" font-style="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-40.05" y="12.57" >test</tspan></text>
+</g>
+<g transform="matrix(1.37 0 0 1.37 84.89 115.73)" style=""  >
+		<text xml:space="preserve" font-family="mont-blackitalic" font-size="40" font-style="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-57.66" y="12.57" >test 2</tspan></text>
+</g>
+</svg>

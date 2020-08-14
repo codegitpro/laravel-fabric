@@ -1,0 +1,100 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Mobile - Accordion -------------------- //
+
+.mobile {
+    &.default {
+
+        // Accordion
+
+        .accordion {
+
+            // Primary
+
+            &.primary {
+                .accordion-body {
+                    margin-bottom       : 3.5rem;
+
+                    .card {
+                        border              : none;
+
+                        .card-header {
+                            @include p-0;
+
+                            background-color    : transparent;
+                            border              : none;
+
+                            .card-link {
+                                @include display-block;
+
+                                @include py-4;
+                                @include px-3;
+
+                                @include font-primary-bold;
+                                @include p;
+
+                                @include text-transform-uppercase;
+
+                                color               : $c-white;
+
+                                background-color    : $c-primary-normal;
+
+                                border-top          : 1px solid $c-primary-normal;
+                                border-bottom       : 1px solid $c-primary-normal;
+
+                                transition          : 0.5s ease;
+
+                                &:after {
+                                    @include display-block;
+
+                                    @include fas;
+                                    @include fa-chevron-down;
+
+                                    float           : right;
+
+                                    transform       : rotate(180deg);
+
+                                    transition      : 0.25s ease;
+                                }
+
+                                &.collapsed {
+                                    color               : $c-grey;
+
+                                    background-color    : $c-white;
+
+                                    border-top          : 1px solid $c-grey;
+                                    border-bottom       : 1px solid $c-grey;
+
+                                    transition          : 0.5s ease;
+
+                                    &:after {
+                                        transform       : rotate(0deg);
+
+                                        transition      : 0.25s ease;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-body {
+                            @include p-0;
+                        }
+                    }
+                }
+
+                .accordion-footer {
+                    @include position-fixed;
+
+                    @include width-100;
+
+                    bottom              : 0;
+                    right               : 0;
+                }
+            }
+        }
+    }
+}

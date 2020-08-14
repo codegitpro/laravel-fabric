@@ -1,0 +1,168 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Button -------------------- //
+
+.desktop {
+    &.default {
+
+        .btn-add {
+            @include display-block;
+
+            @include font-primary-semi-bold;
+            @include small;
+
+            padding             : 0.85rem;
+
+            color               : $c-white;
+
+            background-color    : $c-tertiary-normal;
+            border-radius       : 0.5em;
+
+            i {
+                @include pr-3;
+
+                @include small;
+            }
+
+            &:hover, &:focus, &:active {
+                background-color    : $c-tertiary-darken;
+            }
+        }
+
+        // Modal
+
+        .modal {
+
+            // New Template Modal
+
+            &.new-template-modal {
+                .modal-header {
+                    .close {
+                        @include p-3;
+                        @include mr-0;
+
+                        @include small;
+
+                        cursor              : pointer;
+
+                        opacity             : 1;
+
+                        color               : $c-white;
+
+                        background-color    : $c-red;
+                        border-radius       : 0.5em;
+                    }
+                }
+
+                .modal-footer {
+                    .footer-button {
+                        .btn-add-modal {
+                            @include font-primary-semi-bold;
+                            @include small;
+
+                            padding             : 0.85rem;
+
+                            color               : $c-white;
+
+                            background-color    : $c-tertiary-normal;
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include pr-3;
+
+                                @include small;
+                            }
+
+                            &:hover, &:focus, &:active {
+                                background-color    : $c-tertiary-darken;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // New Font Modal
+
+            &.new-font-modal {
+                .modal-header {
+                    .close {
+                        @include p-3;
+                        @include mr-0;
+
+                        @include small;
+
+                        cursor              : pointer;
+
+                        opacity             : 1;
+
+                        color               : $c-white;
+
+                        background-color    : $c-red;
+                        border-radius       : 0.5em;
+                    }
+                }
+
+                .modal-footer {
+                    .footer-button {
+                        .btn-add-modal {
+                            @include font-primary-semi-bold;
+                            @include small;
+
+                            padding             : 0.85rem;
+
+                            color               : $c-white;
+
+                            background-color    : $c-tertiary-normal;
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include pr-3;
+
+                                @include small;
+                            }
+
+                            &:hover, &:focus, &:active {
+                                background-color    : $c-tertiary-darken;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Sidebar
+
+        .sidebar {
+
+            // Sidebar Footer
+
+            .sidebar-footer {
+                .btn-logout {
+                    @include display-block;
+
+                    @include p-3;
+
+                    @include font-primary-semi-bold;
+                    @include small;
+
+                    color               : $c-white;
+
+                    background-color    : $c-quarter-normal;
+                    border-radius       : 0;
+
+                    i {
+                        @include pr-3;
+                    }
+
+                    &:hover, &:focus, &:active {
+                        background-color    : $c-quarter-darken;
+                    }
+                }
+            }
+        }
+    }
+}

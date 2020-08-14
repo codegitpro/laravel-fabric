@@ -1,0 +1,188 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Box -------------------- //
+
+.desktop {
+    &.default {
+
+        // Select Box
+
+        .select-box {
+
+            // Primary
+
+            &.primary {
+
+                .custom-select-box-wrapper {
+                    @include position-relative;
+
+                    @include display-inline-block;
+
+                    @include width-100;
+
+                    user-select         : none;
+
+                    select {
+                        @include display-none;
+                    }
+
+                    .custom-select-box {
+                        @include position-relative;
+
+                        @include display-inline-block;
+
+                        @include width-100;
+
+                        &.opened {
+                            .custom-select-box-trigger {
+                                &:after {
+                                    transform       : rotate(180deg);
+
+                                    transition      : 0.5s ease;
+                                }
+                            }
+
+                            .custom-options {
+                                transform           : translateY(0.5rem);    
+
+                                pointer-events      : all;
+                                visibility          : visible;
+
+                                opacity             : 1;
+                            }
+                        }
+
+                        .custom-select-box-trigger {
+                            @include position-relative;
+
+                            @include display-block;
+
+                            @include width-100;
+
+                            @include p-3;
+
+                            @include font-primary-light;
+                            @include small;
+
+                            line-height         : 1.35;
+
+                            color               : $c-grey;
+
+                            background-color    : $c-white;
+                            border              : 1px solid $c-grey;
+                            border-radius       : 0;
+
+                            cursor              : pointer;
+
+                            &:after {
+                                @include display-inline-block;
+
+                                @include fas;
+                                @include fa-chevron-down;
+                                
+                                float           : right;
+
+                                transform       : rotate(0deg);
+
+                                transition      : 0.5s ease;
+                            }
+                        }
+
+                        .custom-options {
+                            @include position-absolute;
+
+                            @include overflow-y-scroll;
+
+                            @include display-block;
+
+                            @include width-100;
+
+                            z-index             : 10;
+
+                            top                 : 100%;
+                            left                : 0;
+
+                            transform           : translateY(1rem);
+
+                            max-height          : 10rem;
+
+                            pointer-events      : none;
+                            visibility          : hidden;
+
+                            opacity             : 0;
+
+                            border              : 1px solid $c-grey;
+                            border-radius       : 0;
+
+                            background-color    : $c-white;
+
+                            transition          : 0.5s ease;
+
+                            .option-text {
+                                @include position-relative;
+
+                                @include display-block;
+
+                                @include py-2;
+                                @include px-3;
+
+                                @include font-primary-light;
+                                @include small;
+
+                                cursor                  : pointer;
+
+                                color                   : $c-grey;
+
+                                border-bottom           : 1px solid $c-grey;
+
+                                transition              : 0.5s ease; 
+
+                                &:last-child {
+                                    border              : none;
+                                }
+
+                                &:hover {
+                                    background-color    : $c-grey-light;
+
+                                    transition          : 0.5s ease;
+                                }
+
+                                &.selected {
+                                    background-color    : $c-grey-light;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Input Box
+
+        .input-box {
+
+            // Primary
+
+            &.primary {
+                input {
+                    @include width-100;
+
+                    @include p-3;
+
+                    @include font-primary-light;
+                    @include small;
+
+                    line-height     : 1.35;
+
+                    border          : 1px solid $c-grey;
+
+                    outline-width   : 0;
+                }
+            }
+        }
+    }
+}

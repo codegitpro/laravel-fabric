@@ -1,0 +1,47 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Navbar -------------------- //
+
+.desktop {
+    &.default {
+
+        // Navbar
+
+        .navbar {
+            @include position-fixed;
+
+            z-index                 : 1020;
+
+            top                     : 0;
+            left                    : 0;
+
+            @include media-breakpoint-down(sm) {
+                @include width-100;
+
+                box-shadow              : 0px 10px 15px 0px rgba(0,0,0,0.0);
+
+                transition              : 0.5s ease;
+
+                &.scroll {
+                    background-color    : $c-white;
+
+                    box-shadow          : 0px 10px 15px 0px rgba(0,0,0,0.035);
+
+                    transition          : 0.5s ease;
+                }
+
+                .navbar-brand {
+                    @include py-0;
+                    @include mx-auto;
+
+                    max-width           : 14.5rem;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,162 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Modal -------------------- //
+
+.desktop {
+    &.default {
+
+        // Modal
+
+        .modal {
+
+            // New Template Modal
+
+            &.new-template-modal {
+                .modal-header {
+                    @include align-items-center;
+
+                    @include p-4;
+                }
+
+                .modal-body {
+                    @include py-4;
+
+                    .body-inner {
+                        @include col-12;
+
+                        .template-box {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .caption {
+                                @include col-12;
+                            }
+
+                            .box {
+                                @include col-12;
+                            }
+                        }
+
+                        .preview-box {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .caption {
+                                @include col-12;
+                            }
+
+                            .box {
+                                @include col-12;
+                            }
+                        }
+
+                        .design-box {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .caption {
+                                @include col-12;
+                            }
+
+                            .box {
+                                @include col-12;
+                            }
+                        }
+
+                        .proof-box {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .caption {
+                                @include col-12;
+                            }
+
+                            .box {
+                                @include col-12;
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    @include m-0;
+
+                    .footer-button {
+                        @include col-12;
+
+                        .button {
+                            @include col-12;
+                        }
+                    }
+                }
+            }
+
+            // New Font Modal
+
+            &.new-font-modal {
+                .modal-header {
+                    @include align-items-center;
+
+                    @include p-4;
+                }
+
+                .modal-body {
+                    @include py-4;
+
+                    .body-inner {
+                        @include col-12;
+
+                        .font-box {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .caption {
+                                @include col-12;
+                            }
+
+                            .box {
+                                @include col-12;
+                            }
+                        }
+
+                        .font-edit-name-box {
+                            @include col-12;
+
+                            @include mb-3;
+
+                            .caption {
+                                @include col-12;
+                            }
+
+                            .box {
+                                @include col-12;
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    @include m-0;
+
+                    .footer-button {
+                        @include col-12;
+
+                        .button {
+                            @include col-12;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

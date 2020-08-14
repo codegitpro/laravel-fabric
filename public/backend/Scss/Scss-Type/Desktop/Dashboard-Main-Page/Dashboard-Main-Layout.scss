@@ -1,0 +1,147 @@
+
+
+// Utitlities
+
+@import "../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Dashboard Main - Desktop - Layout -------------------- //
+
+.desktop {
+    &.default {
+
+        // Dashboard Main
+
+        .dashboard-main-page {
+
+            // Table
+
+            .table {
+                > .container-fluid {
+                    @include pt-3;
+                }
+                
+                // Table Header
+
+                .table-header {
+                    @include col-12;
+
+                    @include py-4;
+                    @include px-5;
+
+                    border-bottom   : 1px solid $c-grey-light;
+
+                    .col-inner {
+                        @include col-12;
+
+                        .header-text {
+                            @include col-12;
+
+                            .title {
+                                @include col-12;
+                            }
+                        }
+                    }
+                }
+
+                // Table Action
+
+                .table-action {
+                    @include col-12;
+
+                    @include position-sticky;
+
+                    @include py-3;
+                    @include px-5;
+                    @include mb-4;
+
+                    z-index             : 1030;
+
+                    top                 : 0rem;
+
+                    background-color    : $c-white;
+                    border-bottom       : 1px solid $c-grey-light;
+
+                    .col-inner {
+                        @include col-12;
+
+                        > .row {
+                            @include align-items-center;
+                        }
+
+                        .action-search {
+                            @include col-3;
+
+                            @include mr-auto;
+
+                            .search {
+                                @include col-12;
+                            }
+                        }
+
+                        .action-button {
+                            @include col-3;
+
+                            .button {
+                                @include col-10;
+
+                                @include mx-auto;
+                            }
+                        }
+
+                        .action-pagination {
+                            @include col-4;
+
+                            > .row {
+                                @include align-items-center;
+                            }
+
+                            .pagin-text {
+                                @include col-4;
+
+                                @include pr-0;
+
+                                .caption {
+                                    @include col-12;
+                                }
+                            }
+
+                            .pagin-number {
+                                @include col-8;
+                            }
+                        }
+                    }
+                }
+
+                // Table Card
+
+                .table-card {
+                    @include col-12;
+
+                    .col-inner {
+                        @include col-12;
+
+                        @include mb-3;
+                    }
+                }
+
+                @media (min-width: 1500px) {
+
+                    // Table Action
+
+                    .table-action {
+                        .col-inner {
+                            .action-button {
+                                @include col-2;
+                            }
+
+                            .action-pagination {
+                                @include col-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

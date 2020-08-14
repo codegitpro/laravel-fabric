@@ -1,0 +1,1104 @@
+﻿.desktop.default .dashboard-main-page .table > .container-fluid {
+  padding-top: 1rem !important; }
+
+.desktop.default .dashboard-main-page .table .table-header {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-main-page .table .table-header .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-main-page .table .table-header .col-inner .header-text {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .dashboard-main-page .table .table-header .col-inner .header-text .title {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .dashboard-main-page .table .table-action {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: sticky;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  z-index: 1030;
+  top: 0rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-main-page .table .table-action .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-main-page .table .table-action .col-inner > .row {
+      align-items: center; }
+    .desktop.default .dashboard-main-page .table .table-action .col-inner .action-search {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin-right: auto !important; }
+      .desktop.default .dashboard-main-page .table .table-action .col-inner .action-search .search {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .dashboard-main-page .table .table-action .col-inner .action-button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+      .desktop.default .dashboard-main-page .table .table-action .col-inner .action-button .button {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+    .desktop.default .dashboard-main-page .table .table-action .col-inner .action-pagination {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+      .desktop.default .dashboard-main-page .table .table-action .col-inner .action-pagination > .row {
+        align-items: center; }
+      .desktop.default .dashboard-main-page .table .table-action .col-inner .action-pagination .pagin-text {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-right: 0rem !important; }
+        .desktop.default .dashboard-main-page .table .table-action .col-inner .action-pagination .pagin-text .caption {
+          position: relative;
+          width: 100%;
+          min-height: 1%;
+          padding: 0rem 1rem 0rem 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%; }
+      .desktop.default .dashboard-main-page .table .table-action .col-inner .action-pagination .pagin-number {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; }
+
+.desktop.default .dashboard-main-page .table .table-card {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .desktop.default .dashboard-main-page .table .table-card .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem !important; }
+
+@media (min-width: 1500px) {
+  .desktop.default .dashboard-main-page .table .table-action .col-inner .action-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .desktop.default .dashboard-main-page .table .table-action .col-inner .action-pagination {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+.desktop.default .dashboard-main-page .table .table-header .header-text .title h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #323232; }
+
+.desktop.default .dashboard-main-page .table .table-action .action-pagination .pagin-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-main-page .table .table-navigation .navigation-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-font-page .table > .container-fluid {
+  padding-top: 1rem !important; }
+
+.desktop.default .dashboard-font-page .table .table-header {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-font-page .table .table-header .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-font-page .table .table-header .col-inner .header-text {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .dashboard-font-page .table .table-header .col-inner .header-text .title {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .dashboard-font-page .table .table-action {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: sticky;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  z-index: 1030;
+  top: 0rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-font-page .table .table-action .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-font-page .table .table-action .col-inner > .row {
+      align-items: center; }
+    .desktop.default .dashboard-font-page .table .table-action .col-inner .action-search {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin-right: auto !important; }
+      .desktop.default .dashboard-font-page .table .table-action .col-inner .action-search .search {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .dashboard-font-page .table .table-action .col-inner .action-button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+      .desktop.default .dashboard-font-page .table .table-action .col-inner .action-button .button {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+    .desktop.default .dashboard-font-page .table .table-action .col-inner .action-pagination {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+      .desktop.default .dashboard-font-page .table .table-action .col-inner .action-pagination > .row {
+        align-items: center; }
+      .desktop.default .dashboard-font-page .table .table-action .col-inner .action-pagination .pagin-text {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-right: 0rem !important; }
+        .desktop.default .dashboard-font-page .table .table-action .col-inner .action-pagination .pagin-text .caption {
+          position: relative;
+          width: 100%;
+          min-height: 1%;
+          padding: 0rem 1rem 0rem 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%; }
+      .desktop.default .dashboard-font-page .table .table-action .col-inner .action-pagination .pagin-number {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; }
+
+.desktop.default .dashboard-font-page .table .table-card {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .desktop.default .dashboard-font-page .table .table-card .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem !important; }
+
+@media (min-width: 1500px) {
+  .desktop.default .dashboard-font-page .table .table-action .col-inner .action-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .desktop.default .dashboard-font-page .table .table-action .col-inner .action-pagination {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+.desktop.default .dashboard-font-page .table .table-header .header-text .title h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #323232; }
+
+.desktop.default .dashboard-font-page .table .table-action .action-pagination .pagin-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-font-page .table .table-navigation .navigation-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-mapping-page .table > .container-fluid {
+  padding-top: 1rem !important; }
+
+.desktop.default .dashboard-mapping-page .table .table-header {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-mapping-page .table .table-header .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-mapping-page .table .table-header .col-inner .header-text {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .dashboard-mapping-page .table .table-header .col-inner .header-text .title {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .dashboard-mapping-page .table .table-action {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: sticky;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  z-index: 1030;
+  top: 0rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-mapping-page .table .table-action .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-mapping-page .table .table-action .col-inner > .row {
+      align-items: center; }
+    .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-search {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin-right: auto !important; }
+      .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-search .search {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+      .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-button .button {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+    .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-pagination {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+      .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-pagination > .row {
+        align-items: center; }
+      .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-pagination .pagin-text {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-right: 0rem !important; }
+        .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-pagination .pagin-text .caption {
+          position: relative;
+          width: 100%;
+          min-height: 1%;
+          padding: 0rem 1rem 0rem 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%; }
+      .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-pagination .pagin-number {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; }
+
+.desktop.default .dashboard-mapping-page .table .table-card {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .desktop.default .dashboard-mapping-page .table .table-card .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem !important; }
+
+@media (min-width: 1500px) {
+  .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .desktop.default .dashboard-mapping-page .table .table-action .col-inner .action-pagination {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+.desktop.default .dashboard-mapping-page .table .table-header .header-text .title h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #323232; }
+
+.desktop.default .dashboard-mapping-page .table .table-action .action-pagination .pagin-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-mapping-page .table .table-navigation .navigation-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-logo-page .table > .container-fluid {
+  padding-top: 1rem !important; }
+
+.desktop.default .dashboard-logo-page .table .table-header {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-logo-page .table .table-header .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-logo-page .table .table-header .col-inner .header-text {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .dashboard-logo-page .table .table-header .col-inner .header-text .title {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .dashboard-logo-page .table .table-action {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: sticky;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  z-index: 1030;
+  top: 0rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-logo-page .table .table-action .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-logo-page .table .table-action .col-inner > .row {
+      align-items: center; }
+    .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-search {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin-right: auto !important; }
+      .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-search .search {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+      .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-button .button {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+    .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-pagination {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+      .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-pagination > .row {
+        align-items: center; }
+      .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-pagination .pagin-text {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-right: 0rem !important; }
+        .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-pagination .pagin-text .caption {
+          position: relative;
+          width: 100%;
+          min-height: 1%;
+          padding: 0rem 1rem 0rem 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%; }
+      .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-pagination .pagin-number {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; }
+
+.desktop.default .dashboard-logo-page .table .table-card {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .desktop.default .dashboard-logo-page .table .table-card .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem !important; }
+
+@media (min-width: 1500px) {
+  .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .desktop.default .dashboard-logo-page .table .table-action .col-inner .action-pagination {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+.desktop.default .dashboard-logo-page .table .table-header .header-text .title h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #323232; }
+
+.desktop.default .dashboard-logo-page .table .table-action .action-pagination .pagin-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-logo-page .table .table-navigation .navigation-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-ready-to-print-page .table > .container-fluid {
+  padding-top: 1rem !important; }
+
+.desktop.default .dashboard-ready-to-print-page .table .table-header {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-ready-to-print-page .table .table-header .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-ready-to-print-page .table .table-header .col-inner .header-text {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .desktop.default .dashboard-ready-to-print-page .table .table-header .col-inner .header-text .title {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+
+.desktop.default .dashboard-ready-to-print-page .table .table-action {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: sticky;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  z-index: 1030;
+  top: 0rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed; }
+  .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner > .row {
+      align-items: center; }
+    .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-search {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin-right: auto !important; }
+      .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-search .search {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; }
+    .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-button {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+      .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-button .button {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+    .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-pagination {
+      position: relative;
+      width: 100%;
+      min-height: 1%;
+      padding: 0rem 1rem 0rem 1rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+      .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-pagination > .row {
+        align-items: center; }
+      .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-pagination .pagin-text {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-right: 0rem !important; }
+        .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-pagination .pagin-text .caption {
+          position: relative;
+          width: 100%;
+          min-height: 1%;
+          padding: 0rem 1rem 0rem 1rem;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%; }
+      .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-pagination .pagin-number {
+        position: relative;
+        width: 100%;
+        min-height: 1%;
+        padding: 0rem 1rem 0rem 1rem;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; }
+
+.desktop.default .dashboard-ready-to-print-page .table .table-card {
+  position: relative;
+  width: 100%;
+  min-height: 1%;
+  padding: 0rem 1rem 0rem 1rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .desktop.default .dashboard-ready-to-print-page .table .table-card .col-inner {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem !important; }
+
+@media (min-width: 1500px) {
+  .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-button {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .desktop.default .dashboard-ready-to-print-page .table .table-action .col-inner .action-pagination {
+    position: relative;
+    width: 100%;
+    min-height: 1%;
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+.desktop.default .dashboard-ready-to-print-page .table .table-header .header-text .title h3 {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #323232; }
+
+.desktop.default .dashboard-ready-to-print-page .table .table-action .action-pagination .pagin-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }
+
+.desktop.default .dashboard-ready-to-print-page .table .table-navigation .navigation-text .caption p {
+  font-family: "Mont";
+  font-style: normal;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232; }

@@ -1,0 +1,646 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Card -------------------- //
+
+.desktop {
+    &.default {
+
+        // Card
+
+        .custom-card {
+
+            // Primary
+
+            &.primary {
+                @include position-relative;
+
+                @include p-4;
+
+                background-color        : $c-white;
+                border-radius           : 0.5em;
+
+                box-shadow              : 0 1px 3px rgba(0,0,0,0.0), 0 1px 2px rgba(0,0,0,0.0);
+
+                transition              : 0.5s ease;
+
+                .col {
+                    @include px-2;
+
+                    // Preview
+
+                    &:first-child {
+                        max-width       : 8.5%;
+                    }
+
+                    // Template ID
+
+                    &:nth-child(2) {
+                        @include align-self-center;
+
+                        max-width       : 7.5%;
+                    }
+
+                    // Product
+
+                    &:nth-child(3) {
+                        @include align-self-center;
+
+                        max-width       : 7.5%;
+                    }
+
+                    // Design Background
+
+                    &:nth-child(4) {
+                        max-width       : 8.5%;
+                    }
+
+                    // Proof Background
+
+                    &:nth-child(5) {
+                        max-width       : 8.5%;
+                    }
+
+                    // Font Size
+
+                    &:nth-child(7) {
+                        max-width       : 8.5%;
+                    }
+
+                    // Text Position
+
+                    &:nth-child(8) {
+                        max-width       : 12.5%;
+                    }
+
+                    // Font Colour
+
+                    &:nth-child(9) {
+                        max-width       : 12.5%;
+                    }
+
+                    // Icon
+
+                    &:last-child {
+                        max-width       : 5%;
+                    }
+
+                    // For Global ( Custom Card - Primary )
+
+                    .image {
+                        @include col-12;
+
+                        img {
+                            @include overflow-hidden;
+
+                            max-width       : 70px;
+
+                            border-radius   : 0.5em;
+                        }
+                    }
+
+                    .caption {
+                        @include col-12;
+
+                        p {
+                            @include font-primary-regular;
+                            @include small;
+
+                            @include mb-2;
+
+                            color       : $c-grey;
+                        }
+                    }
+
+                    .box {
+                        @include col-12;
+
+                        @include mb-2;
+
+                        &:last-child {
+                            @include mb-0;
+                        }
+                    }
+
+                    .icon {
+                        @include col-12;
+
+                        @include text-align-center;
+
+                        @include pr-2;
+                        @include mb-1;
+
+                        a {
+                            @include display-block;
+
+                            padding             : 0.35rem;
+
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include small;
+                            }
+
+                            &.icon-copy {
+                                color                   : $c-grey;
+                            }
+
+                            &.icon-delete {
+                                color                   : $c-grey;
+
+                                background-color        : $c-grey-super-light;
+
+                                &:hover, &:focus, &:active {
+                                    color               : $c-white;
+
+                                    background-color    : $c-grey;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover, &:focus, &:active {
+                    z-index                 : 10;
+
+                    transform               : scale(1.015);
+
+                    box-shadow              : 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+
+                    transition              : 0.5s ease;
+                }
+            }
+
+            // Secondary
+
+            &.secondary {
+                @include position-relative;
+
+                @include p-4;
+
+                background-color        : $c-white;
+                border-radius           : 0.5em;
+
+                box-shadow              : 0 1px 3px rgba(0,0,0,0.0), 0 1px 2px rgba(0,0,0,0.0);
+
+                transition              : 0.5s ease;
+
+                > .row {
+                    @include align-items-center;
+                }
+
+                .col {
+                    @include px-2;
+
+                    // List Number
+
+                    &:nth-child(1) {
+                        @include text-align-center;
+
+                        max-width       : 5%;
+                    }
+
+                    // Font
+
+                    &:nth-child(2) {
+                        max-width       : 25%;
+                    }
+
+                    // Font Edit Name
+
+                    &:nth-child(3) {
+                        max-width       : 65%;
+                    }
+
+                    // Icon
+
+                    &:nth-child(4) {
+                        max-width       : 5%; 
+                    }
+
+                    // For Global ( Custom Card - Primary )
+
+                    .caption {
+                        @include col-12;
+
+                        p {
+                            @include font-primary-regular;
+                            @include small;
+
+                            @include mb-2;
+
+                            color       : $c-grey;
+                        }
+                    }
+
+                    .icon {
+                        @include col-12;
+
+                        @include text-align-center;
+
+                        @include pr-2;
+                        @include mb-1;
+
+                        a {
+                            @include display-block;
+
+                            padding             : 0.35rem;
+
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include small;
+                            }
+
+                            &.icon-delete {
+                                color                   : $c-grey;
+
+                                background-color        : $c-grey-super-light;
+
+                                &:hover, &:focus, &:active {
+                                    color               : $c-white;
+
+                                    background-color    : $c-grey;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover, &:focus, &:active {
+                    z-index                 : 10;
+
+                    transform               : scale(1.015);
+
+                    box-shadow              : 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+
+                    transition              : 0.5s ease;
+                }
+            }
+
+            // Tertiary
+
+            &.tertiary {
+                @include position-relative;
+
+                @include p-4;
+
+                background-color        : $c-white;
+                border-radius           : 0.5em;
+
+                box-shadow              : 0 1px 3px rgba(0,0,0,0.0), 0 1px 2px rgba(0,0,0,0.0);
+
+                transition              : 0.5s ease;
+
+                > .row {
+                    @include align-items-center;
+                }
+
+                .col {
+                    @include px-2;
+
+                    // Product
+
+                    &:nth-child(1) {
+                        @include ml-auto;
+
+                        max-width       :12.5%;
+                    }
+
+                    // Product Background
+
+                    &:nth-child(2) {
+                        max-width       : 80%;
+                    }
+
+                    // Icon
+
+                    &:nth-child(3) {
+                        max-width       : 5%;
+                    }
+
+                    // For Global ( Custom Card - Primary )
+
+                    .image {
+                        @include col-12;
+
+                        img {
+                            @include overflow-hidden;
+
+                            max-width       : 70px;
+
+                            border-radius   : 0.5em;
+                        }
+                    }
+
+                    .caption {
+                        @include col-12;
+
+                        p {
+                            @include font-primary-regular;
+                            @include small;
+
+                            @include mb-2;
+
+                            color       : $c-grey;
+                        }
+                    }
+
+                    .icon {
+                        @include col-12;
+
+                        @include text-align-center;
+
+                        @include pr-2;
+                        @include mb-1;
+
+                        a {
+                            @include display-block;
+
+                            padding             : 0.35rem;
+
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include small;
+                            }
+
+                            &.icon-copy {
+                                color                   : $c-grey;
+                            }
+
+                            &.icon-delete {
+                                color                   : $c-grey;
+
+                                background-color        : $c-grey-super-light;
+
+                                &:hover, &:focus, &:active {
+                                    color               : $c-white;
+
+                                    background-color    : $c-grey;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover, &:focus, &:active {
+                    z-index                 : 10;
+
+                    transform               : scale(1.015);
+
+                    box-shadow              : 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+
+                    transition              : 0.5s ease;
+                }
+            }
+
+            // Quarter
+
+            &.quarter {
+                @include position-relative;
+
+                @include p-4;
+
+                background-color        : $c-white;
+                border-radius           : 0.5em;
+
+                box-shadow              : 0 1px 3px rgba(0,0,0,0.0), 0 1px 2px rgba(0,0,0,0.0);
+
+                transition              : 0.5s ease;
+
+                > .row {
+                    @include align-items-center;
+                }
+
+                .col {
+                    @include px-2;
+
+                    // Short Name
+
+                    &:nth-child(1) {
+                        @include ml-auto;
+
+                        max-width       : 12.5%;
+                    }
+
+                    // Brand Name
+
+                    &:nth-child(2) {
+                        max-width       : 20%;
+                    }
+
+                    // Logo
+
+                    &:nth-child(3) {
+                        max-width       : 40%;
+                    }
+
+                    // Upload
+
+                    &:nth-child(4) {
+                        @include text-align-right;
+
+                        max-width       : 25%;
+                    }
+
+                    // For Global ( Custom Card - Primary )
+
+                    .image {
+                        @include col-12;
+
+                        img {
+                            @include overflow-hidden;
+
+                            max-width       : 70px;
+
+                            border-radius   : 0.5em;
+                        }
+                    }
+
+                    .caption {
+                        @include col-12;
+
+                        p {
+                            @include font-primary-regular;
+                            @include small;
+
+                            @include mb-2;
+
+                            color       : $c-grey;
+                        }
+                    }
+
+                    .button {
+                        @include col-12;
+
+                        .btn-upload {
+                            @include display-inline-block;
+
+                            @include width-auto;
+
+                            @include px-4;
+
+                            @include font-primary-semi-bold;
+                            @include small;
+
+                            padding             : 0.85rem;
+
+                            color               : $c-white;
+
+                            background-color    : $c-tertiary-normal;
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include pr-3;
+
+                                @include small;
+                            }
+
+                            &:hover, &:focus, &:active {
+                                background-color    : $c-tertiary-darken;
+                            }
+                        }
+                    }
+                }
+
+                &:hover, &:focus, &:active {
+                    z-index                 : 10;
+
+                    transform               : scale(1.015);
+
+                    box-shadow              : 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+
+                    transition              : 0.5s ease;
+                }
+            }
+
+            // Quinary
+
+            &.quinary {
+                @include position-relative;
+
+                @include p-4;
+
+                background-color        : $c-white;
+                border-radius           : 0.5em;
+
+                box-shadow              : 0 1px 3px rgba(0,0,0,0.0), 0 1px 2px rgba(0,0,0,0.0);
+
+                transition              : 0.5s ease;
+
+                > .row {
+                    @include align-items-center;
+                }
+
+                .col {
+                    @include col-12;
+
+                    // Template Preview
+
+                    &:nth-child(1) {
+                        max-width       : 10%;
+                    }
+
+                    // Brand
+
+                    &:nth-child(2) {
+                        max-width       : 20%;
+                    }
+
+                    // Template ID
+
+                    &:nth-child(3) {
+                        max-width       : 20%;
+                    }
+
+                    // Order ID
+
+                    &:nth-child(4) {
+                        max-width       : 30%;
+                    }
+
+                    // Download
+
+                    &:nth-child(5) {
+                        @include text-align-right;
+
+                        max-width       : 20%;
+                    }
+
+                    // For Global ( Custom Card - Primary )
+
+                    .image {
+                        @include col-12;
+
+                        img {
+                            @include overflow-hidden;
+
+                            max-width       : 70px;
+
+                            border-radius   : 0.5em;
+                        }
+                    }
+
+                    .caption {
+                        @include col-12;
+
+                        p {
+                            @include font-primary-regular;
+                            @include small;
+
+                            @include mb-2;
+
+                            color       : $c-grey;
+                        }
+                    }
+
+                    .button {
+                        @include col-12;
+
+                        .btn-download {
+                            @include display-inline-block;
+
+                            @include width-auto;
+
+                            @include px-4;
+
+                            @include font-primary-semi-bold;
+                            @include small;
+
+                            padding             : 0.85rem;
+
+                            color               : $c-white;
+
+                            background-color    : $c-tertiary-normal;
+                            border-radius       : 0.5em;
+
+                            i {
+                                @include pr-3;
+
+                                @include small;
+                            }
+
+                            &:hover, &:focus, &:active {
+                                background-color    : $c-tertiary-darken;
+                            }
+                        }
+                    }
+                }
+
+                &:hover, &:focus, &:active {
+                    z-index                 : 10;
+
+                    transform               : scale(1.015);
+
+                    box-shadow              : 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05);
+
+                    transition              : 0.5s ease;
+                }
+            }
+        }
+    }
+}

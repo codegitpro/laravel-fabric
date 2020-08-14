@@ -1,0 +1,60 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Typography -------------------- //
+
+.desktop {
+    &.default {
+
+        // By Font Type
+
+        .font-heading {
+            color           : $c-primary; 
+        }
+
+        .font-caption {
+            @include mb-3;
+
+            @include small;
+
+            color           : $c-grey; 
+
+            @include media-breakpoint-down(md) {
+                @include mb-2;
+            }
+        }
+
+        // By Font Weight
+
+        .font-heavy {
+            @include font-primary-heavy;
+        }
+
+        .font-black {
+            @include font-primary-black;
+        }
+
+        .font-bold {
+            @include font-primary-bold;
+        }
+
+        .font-semi-bold {
+            @include font-primary-semi-bold;
+        }
+
+        .font-medium {
+            @include font-primary-medium;
+        }
+
+        .font-regular {
+            @include font-primary-regular;
+        }
+
+        .font-light {
+            @include font-primary-light;
+        }
+    }
+}

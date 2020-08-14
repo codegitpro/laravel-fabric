@@ -1,0 +1,84 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Sidebar -------------------- //
+
+.desktop {
+    &.default {
+
+        // Sidebar
+
+        .sidebar {
+            @include position-fixed;
+
+            @include height-100;
+
+            @include overflow-y-auto;
+            @include overflow-x-hidden;
+
+            @include px-3;
+
+            z-index             : 1000;
+
+            width               : 15%;
+
+            left                : 0%;
+
+            background          : $c-grey-super-light;
+
+            // Sidebar Content
+
+            .sidebar-content {
+                @include col-12;
+
+                @include px-0;
+                @include mt-5;
+
+                .col-inner {
+                    @include col-12;
+
+                    .content-link {
+                        @include col-12;
+
+                        @include px-0;
+
+                        .nav {
+                            @include display-block;
+                        }
+                    }
+                }
+            }
+
+            // Sidebar Footer
+
+            .sidebar-footer {
+                @include col-12;
+
+                @include px-0;
+
+                @include position-absolute;
+
+                bottom      : 0;
+                left        : 0;
+
+                .col-inner {
+                    @include col-12;
+
+                    .footer-button {
+                        @include col-12;
+
+                        .button {
+                            @include col-12;
+
+                            @include px-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

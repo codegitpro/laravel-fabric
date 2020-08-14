@@ -1,0 +1,58 @@
+
+
+// Utitlities
+
+@import "../../Scss-Vendor/_font-face.scss";
+@import "../../Scss-Vendor/_fontello.scss";
+
+// -------------------- Master - Font -------------------- //
+
+// Font - Primary
+
+@font-face {
+  font-family       : 'Mont';
+  font-style        : normal;
+  font-weight       : 300;
+  src               : "{{asset('backend/Assets/Fonts/Mont/Mont-Light.ttf')}}";
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Mont';
+  font-style        : normal;
+  font-weight       : 400;
+  src               : "{{asset('backend/Assets/Fonts/Mont/Mont-Regular.ttf')}}";
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Mont';
+  font-style        : normal;
+  font-weight       : 600;
+  src               : "{{asset('backend/Assets/Fonts/Mont/Mont-SemiBold.ttf')}}";
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Mont';
+  font-style        : normal;
+  font-weight       : 700;
+  src               : "{{asset('backend/Assets/Fonts/Mont/Mont-Bold.ttf')}}";
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Mont';
+  font-style        : normal;
+  font-weight       : 800;
+  src               : "{{asset('backend/Assets/Fonts/Biennale/Biennale-Black.otf')}}";
+  font-display      : swap;
+}
+
+@font-face {
+  font-family       : 'Mont';
+  font-style        : normal;
+  font-weight       : 900;
+  src               : "{{asset('backend/Assets/Fonts/Biennale/Biennale-Heavy.otf')}}";
+  font-display      : swap;
+}

@@ -1,0 +1,55 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - General -------------------- //
+
+// Body
+
+body {
+    background-color    : $c-grey-light;
+
+    &.mobile {
+        @include mx-auto;
+
+        max-width       : 400px;
+    }
+}
+
+// Image
+
+img {
+    width               : 100%;
+}
+
+// Anchor
+
+a {
+    transition          : all 0.5s ease;
+
+    &:hover &:focus, &:active {
+        transition      : all 0.5s ease;
+    }
+}
+
+// Grid
+
+.container {
+    padding-top         : 3.5rem;
+    padding-bottom      : 3.5rem;
+}
+
+.container-fluid {
+    padding-top         : 3.5rem;
+    padding-bottom      : 3.5rem;
+}
+
+// Typography
+
+p {
+    @include mb-0;
+}
+
+

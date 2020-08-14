@@ -1,0 +1,288 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Mobile - Anchor -------------------- //
+
+.mobile {
+    &.default {
+
+        // Button
+
+        .btn {
+
+            // Add
+
+            &.btn-add {
+                @include p-3;
+
+                color                   : $c-grey;
+
+                background-color        : $c-white;
+
+                border                  : 1px solid $c-grey;
+                border-radius           : 0;
+
+                transition              : 0.5s ease;
+
+                &:hover, &:focus, &:active {
+                    color               : $c-white;
+
+                    background-color    : $c-grey;
+
+                    transition          : 0.5s ease;
+                }
+            }
+
+            // Submit
+
+            &.btn-submit {
+                @include font-primary-regular;
+                @include p;
+
+                @include py-3;
+
+                color                       : $c-white;
+
+                background-color            : $c-secondary-normal;
+                border-radius               : 0;
+
+                &:hover {
+                    background-color        : $c-secondary-lighten;
+                }
+            }
+
+            // Upload
+
+            &.btn-upload {
+                @include font-primary-regular;
+                @include small;
+
+                @include py-3;
+
+                color                       : $c-white;
+
+                background-color            : $c-tertiary-normal;
+                border-radius               : 50em;
+
+                &:hover {
+                    background-color        : $c-tertiary-darken;
+                }
+            }
+
+            // Customize
+
+            &.btn-customize {
+                @include font-primary-regular;
+                @include small;
+
+                @include py-3;
+
+                color                       : $c-grey;
+
+                background-color            : $c-white;
+                border                      : 1px solid $c-grey;
+                border-radius               : 0;
+
+                &:hover {
+                    color                   : $c-primary-normal;
+
+                    border                  : 1px solid $c-primary-normal;
+                }
+            }
+
+            // Process
+
+            &.btn-process {
+                @include font-primary-regular;
+                @include small;
+
+                @include py-3;
+
+                color                       : $c-white;
+
+                background-color            : $c-primary-normal;
+                border-radius               : 0;
+
+                &:hover {
+                    background-color        : $c-primary-lighten;
+                }
+            }
+        }
+
+        // Icon
+
+        .icon {
+            @include display-inline-block;
+
+            &:hover {
+                transform       : translateY(-0.25rem);
+            }
+        }
+
+        // Color
+
+        .color {
+            @include position-relative;
+
+            @include display-inline-block;
+
+            width                   : 2.35rem;
+            height                  : 2.35rem;
+
+            border-radius           : 50em;
+
+            i {
+                @include position-absolute;
+
+                @include small;
+
+                top                 : 0%;
+                left                : 100%;
+
+                transform           : translate(-50%, -50%) translateY(0.5rem);
+
+                opacity             : 0;
+
+                color               : $c-tertiary-normal;
+
+                transition          : 0.5s ease;
+            }
+
+            &:hover, &:focus, &:active {
+                i {
+                    transform       : translate(-50%, -50%) translateY(0rem);
+
+                    opacity         : 1;
+
+                    transition      : 0.5s ease;
+                }
+            }
+
+            &.black {
+                background-color    : #000000;
+                border              : 1px solid #000000;
+            }
+
+            &.red {
+                background-color    : #DA3123;
+                border              : 1px solid #DA3123;
+            }
+
+            &.blue-light {
+                background-color    : #62C9CB;
+                border              : 1px solid #62C9CB;
+            }
+
+            &.blue {
+                background-color    : #3A78C3;
+                border              : 1px solid #3A78C3;
+            }
+
+            &.pink {
+                background-color    : #DB3E97;
+                border              : 1px solid #DB3E97;
+            }
+
+            &.orange {
+                background-color    : #ED9035;
+                border              : 1px solid #ED9035;
+            }
+
+            &.white {
+                background-color    : #ffffff;
+                border              : 1px solid #000000;
+            }
+
+            &.purple {
+                background-color    : #604C83;
+                border              : 1px solid #604C83;
+            }
+
+            &.yellow {
+                background-color    : #F6CE15;
+                border              : 1px solid #F6CE15;
+            }
+
+            &.cream {
+                background-color    : #F6F4CA;
+                border              : 1px solid #F6F4CA;
+            }
+
+            &.green-pastel {
+                background-color    : #B8DFC6;
+                border              : 1px solid #B8DFC6;
+            }
+
+            &.blue-pastel {
+                background-color    : #CFE1E2;
+                border              : 1px solid #CFE1E2;
+            }
+
+            &.red-pastel {
+                background-color    : #FFC5CF;
+                border              : 1px solid #FFC5CF;
+            }
+
+            &.purple-pastel {
+                background-color    : #C8B0D6;
+                border              : 1px solid #C8B0D6;
+            }
+        }
+
+        // Upload Picture
+
+        .upload-picture {
+            @include position-relative;
+
+            @include display-flex;
+
+            @include height-100;
+
+            img {
+                @include overflow-hidden;
+
+                border-radius       : 1em;
+
+                border              : 3.5px solid transparent;
+
+                transition          : 0.5s ease;
+            }
+
+            i {
+                @include position-absolute;
+
+                @include small;
+
+                top                 : 17.5%;
+                left                : 85%;
+
+                transform           : translate(-50%, -50%) translateY(0.5rem);
+
+                opacity             : 0;
+
+                color               : $c-tertiary-normal;
+
+                transition          : 0.5s ease;
+            }
+
+            &:hover {
+                img {
+                    border          : 3.5px solid $c-tertiary-normal;
+
+                    transition      : 0.5s ease;
+                }
+
+                i {
+                    transform       : translate(-50%, -50%) translateY(0rem);
+
+                    opacity         : 1;
+
+                    transition      : 0.5s ease;
+                }
+            }
+        }
+    }
+}

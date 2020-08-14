@@ -1,0 +1,70 @@
+
+
+// Utitlities
+
+@import "../../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Dashboard Mapping - Desktop - Typography -------------------- //
+
+.desktop {
+    &.default {
+
+        // Dashboard Mapping
+
+        .dashboard-mapping-page {
+
+            // Table
+
+            .table {
+
+                // Table Header
+
+                .table-header {
+                    .header-text {
+                        .title {
+                            h3 {
+                                @include font-primary-bold;
+                                @include h4;
+
+                                color       : $c-black;
+                            }
+                        }
+                    }
+                }
+
+                // Table Action
+
+                .table-action {
+                    .action-pagination {
+                        .pagin-text {
+                            .caption {
+                                p {
+                                    @include font-primary-regular;
+                                    @include small;
+
+                                    color       : $c-black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Table Navigation
+
+                .table-navigation {
+                    .navigation-text {
+                        .caption {
+                            p {
+                                @include font-primary-bold;
+                                @include small;
+
+                                color       : $c-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

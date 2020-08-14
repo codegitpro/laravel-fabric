@@ -1,0 +1,43 @@
+
+
+// Utitlities
+
+@import "../../Scss-Utilities/Utilities.scss";
+
+// -------------------- Master - Desktop - Pagination -------------------- //
+
+.desktop {
+    &.default {
+
+        // Pagination
+
+        .pagination {
+            @include mb-0;
+
+            .page-item {
+                @include width-100;
+
+                @include text-align-center;
+
+                .page-link {
+                    @include display-block;
+
+                    @include font-primary-regular;
+                    @include small;
+
+                    padding             : 0.85rem;
+
+                    color               : $c-grey;
+
+                    background-color    : $c-white;
+                    border              : 1px solid $c-grey;
+                    border-radius       : 0;
+
+                    &:hover, &:focus, &:active {
+                        background-color    : $c-grey-super-light;
+                    }
+                }
+            }
+        }
+    }
+}
